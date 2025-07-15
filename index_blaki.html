@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+  <meta charset="UTF-8" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <title>BLAKI OFFICIAL</title>  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">  
+
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at center, #0f0f0f 0%, #000000 100%);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      padding: 1rem 2rem;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+    header .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #00ffcc;
+    }
+    section {
+      padding: 100px 2rem;
+      text-align: center;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 0 2rem;
+      background: url('https://morico.in/_next/static/media/bg-hero.875831a5.png') no-repeat center/cover;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin-top: 1rem;
+      animation: fadeInUp 1.5s ease-out forwards;
+    }
+    .btn-primary {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background: #00ffcc;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .btn-primary:hover {
+      transform: scale(1.05);
+    }
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .about, .tokenomics, .roadmap {
+      background-color: #111;
+    }
+    .tokenomics img,
+    .about img,
+    .roadmap img {
+      max-width: 90%;
+      margin: 2rem auto;
+      display: block;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      nav a {
+        margin-left: 1rem;
+      }
+    }
+  </style>
+
+  <style>
+    #preloader {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .candlestick-loader {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      gap: 6px;
+    }
+    .bar {
+      width: 8px;
+      background-color: #00ffcc;
+      animation: moveUpDown 1s infinite ease-in-out alternate;
+      border-radius: 2px;
+    }
+    .bar:nth-child(1) { height: 20px; animation-delay: 0s; }
+    .bar:nth-child(2) { height: 40px; animation-delay: 0.1s; }
+    .bar:nth-child(3) { height: 30px; animation-delay: 0.2s; }
+    .bar:nth-child(4) { height: 50px; animation-delay: 0.3s; }
+    .bar:nth-child(5) { height: 35px; animation-delay: 0.4s; }
+    @keyframes moveUpDown {
+      0%   { transform: scaleY(1); opacity: 0.7; }
+      100% { transform: scaleY(1.6); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div id="preloader">
+    <div class="candlestick-loader">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </div>
+
+<header>
+    <div class="logo">BLAKI</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#roadmap">Roadmap</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>BLAKI</h1>
+    <img src="images/Group 45.png" style="position: absolute; left: 1190px; top: 140px; width: 200px;">
+    <img src="images/Group 46.png" style="position: absolute; left: 50px; top: 140px; width: 230px;">
+    <img src="images/photo_2025-07-13_00-19-55 2.png" style="position: absolute; left: 1px; top: 30px; width: 200px;">
+    <img src="images/photo_2025-07-13_14-42-33 1.png" style="position: absolute; left: 1275px; top: 30px; width: 200px;">
+    <p>The meme coin that’s taking the blockchain by storm. A new era of fun and community.</p>
+    <button class="btn-primary">Join Now</button>
+  </section>
+
+  <section class="about" id="about">
+    <h2 class="section-title">About $BLAKI COIN</h2>
+    <img src="images/Frame 89 1.png" style="position: absolute; left: 0px; top: 705px; width:190px;">
+    <img src="images/photo_2025-07-13_00-19-58 2.png" style="position: absolute; left: 1290px; top: 640px; width: 200px;">
+    <p>BLAKI is a community-driven meme coin with a vision to revolutionize the meme economy.<br>Fully decentralized, fair, and fun.</p>
+
+    <section class="tokenomics" id="tokenomics">
+      <h2 class="section-title">Tokenomics</h2>
+      <img src="images/Group 53.png" style="position: absolute; left: 160px; top: 1150px; width: 120px;">
+      <img src="images/Group 51.png" style="position: absolute; left: 480px; top: 1150px; width: 120px;">
+      <img src="images/Group 52.png" style="position: absolute; left: 840px; top: 1150px; width: 120px;">
+      <img src="images/Group 50.png" style="position: absolute; left: 1180px; top: 1150px; width: 120px;">
+      <img src="images/It will be possible to buy.png" style="position: absolute; left: 120px; top: 1300px; width: 210px;">
+      <img src="images/it will be used to maintain the liquidity of the BLAKI coin.png" style="position: absolute; left: 425px; top: 1300px; width: 240px;">
+      <img src="images/the airdrop of the project.png" style="position: absolute; left: 800px; top: 1300px; width: 220px;">
+      <img src="images/distribute among the community members.png" style="position: absolute; left: 1100px; top: 1300px; width: 270px;">
+    </section>
+
+    <section class="roadmap" id="roadmap">
+      <h2 class="section-title">Roadmap</h2>
+      <p>Phase 1: Launch<br>Phase 2: Community Building<br>Phase 3: CEX Listings<br>Phase 4: World Domination<br>Phase 5:TOP SECRET</p>
+      <img src="images/Group 44.png" style="position: absolute; left: 70px; top: 1500px; width: 5000px;">
+      <img src="images/$BLAKI.png" style="position: absolute; left: 30px; top: 1770px; width: 100px;">
+      <img src="images/Frame 89.png" style="position: absolute; left: 620px; top: 1770px; width: 40px;">
+      <img src="images/BLAKI-COIN.png" style="position: absolute; left: 670px; top: 1782px; width: 140px;">
+    </section>
+
+  </section>
+
+  <script>
+    window.addEventListener('load', function () {
+      const preloader = document.getElementById('preloader');
+      if (preloader) {
+        preloader.style.transition = 'opacity 0.6s ease';
+        preloader.style.opacity = '0';
+        setTimeout(() => preloader.remove(), 600);
+      }
+    });
+  </script>
+</body>
+</html>
